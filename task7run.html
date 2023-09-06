@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        label{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return isAllValidUser()">
+        <label for="" id="userNameLabel"></label>
+        <input type="text" placeholder="User Name (1-10 characters)" id="userNameInp">
+        <label for="" id="userMailLabel"></label>
+        <input type="email" placeholder="Enter Email (.com)" id="userMailInp">
+        <label for="" id="userAgeLabel"></label>
+        <input type="date" placeholder="Enter Birth day" id="userAgeInp">
+
+
+        <input type="text" placeholder="Enter Password" id="passwordInp">
+        <label for="" id="passwordLabel"></label>
+        <input type="text" placeholder="Enter Password Again" id="passwordCopyInp">
+        
+
+
+        <button type="submit">submit form</button>
+    </form>
+    
+    <script src="task7.js"></script>
+</body>
+</html>
